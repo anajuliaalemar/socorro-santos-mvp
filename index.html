@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socorro Santos — Atendimento Especializado em Altas Habilidades / Superdotação</title>
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <!-- Ícones do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <style>
+    :root {
+      --brand-primary: #0F2C59;     /* Azul Marinho Clínico */
+      --brand-secondary: #1F4E79;   /* Azul Médio */
+      --brand-accent: #128C7E;      /* Verde WhatsApp Oficial */
+      --brand-bg: #F8FAF6;          /* Fundo Claro Suave */
+      --brand-card-bg: #FFFFFF;     /* Branco Puro */
+      --text-dark: #1E293B;         /* Chumbo Elegante */
+      --text-muted: #64748B;        /* Texto Secundário */
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--brand-bg);
+      line-height: 1.6;
+    }
+
+    .navbar-brand-title {
+      font-weight: 800;
+      color: var(--brand-primary);
+      letter-spacing: -0.5px;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+      color: #FFFFFF;
+      padding: 4.5rem 0 4rem;
+      border-bottom: 5px solid #0A1E3F;
+    }
+
+    .hero-badge {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 1.25rem;
+    }
+
+    .btn-accessible {
+      min-height: 50px;
+      padding: 12px 28px;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+    }
+
+    .btn-brand-accent {
+      background-color: var(--brand-accent);
+      color: #FFFFFF;
+      border: none;
+    }
+    .btn-brand-accent:hover {
+      background-color: #0B665B;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(18, 140, 126, 0.3);
+    }
+
+    .form-control:focus, .form-select:focus, .btn:focus {
+      outline: 3px solid #F59E0B !important;
+      outline-offset: 2px;
+      box-shadow: none !important;
+    }
+
+    .clinical-card {
+      background: var(--brand-card-bg);
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+    }
+    .clinical-card:hover {
+      border-color: #CBD5E1;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(15, 44, 89, 0.08);
+    }
+
+    .label-accessible {
+      font-weight: 700;
+      color: var(--brand-primary);
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .app-screen {
+      animation: fadeIn 0.35s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TELA 1: LANDING PAGE EDUCATIVA E INSTITUCIONAL ================= -->
+  <div id="tela1" class="app-screen">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <div class="bg-primary text-white p-2 rounded-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: var(--brand-primary) !important;">
+            <i class="bi bi-brain fs-5"></i>
+          </div>
+          <div>
+            <span class="navbar-brand-title d-block leading-none fs-5">Socorro Santos</span>
+            <small class="text-muted d-block" style="font-size: 0.75rem; margin-top: -3px;">Atendimento Especializado em AH/SD</small>
+          </div>
+        </a>
+        <button onclick="mostrarTela2()" class="btn btn-outline-primary btn-accessible d-none d-sm-inline-flex" style="min-height: 42px; font-size: 0.9rem;">
+          <i class="bi bi-calendar-check me-2"></i> Solicitar Triagem
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <span class="hero-badge">
+              <i class="bi bi-patch-check-fill me-2"></i>Acolhimento Neuropsicopedagógico Especializado
+            </span>
+            <h1 class="display-5 fw-extrabold mb-3" style="font-weight: 800;">
+              Altas Habilidades / Superdotação
+            </h1>
+            <p class="lead mb-4 opacity-90 mx-auto" style="max-width: 720px; font-weight: 400;">
+              Orientação técnica, diagnósticos precisos e acolhimento individualizado para crianças, adolescentes, adultos e instituições de ensino.
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+              <button onclick="mostrarTela2()" class="btn btn-brand-accent btn-accessible shadow-lg">
+                <i class="bi bi-whatsapp me-2 fs-5"></i> Agendar Triagem Inicial
+              </button>
+              <a href="#saiba-mais" class="btn btn-outline-light btn-accessible">
+                Conhecer a Especialista
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container py-5" id="saiba-mais">
+      
+      <!-- Seção Desmistificando AH/SD -->
+      <section class="mb-5 pb-3">
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-lg-8">
+            <h2 class="h3 fw-bold" style="color: var(--brand-primary);">Desmistificando as Altas Habilidades</h2>
+            <div class="mx-auto my-3" style="width: 60px; height: 4px; background-color: var(--brand-accent); border-radius: 2px;"></div>
+            <p class="text-muted fs-6">
+              Ter Altas Habilidades ou Superdotação não significa apenas obter notas perfeitas na escola. É uma condição neurodivergente que exige olhar clínico atento, apoio emocional e adequação pedagógica contínua.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="clinical-card h-100 p-4">
+              <div class="text-primary mb-3 fs-3" style="color: var(--brand-primary) !important;"><i class="bi bi-lightbulb"></i></div>
+              <h3 class="h5 fw-bold mb-2">Potencial Cognitivo</h3>
+              <p class="small text-muted mb-0">Raciocínio rápido, excelente memória e capacidade avançada de aprendizagem em áreas específicas do conhecimento.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="clinical-card h-100 p-4">
+              <div class="text-primary mb-3 fs-3" style="color: var(--brand-primary) !important;"><i class="bi bi-heart-pulse"></i></div>
+              <h3 class="h5 fw-bold mb-2">Intensidade Emocional</h3>
+              <p class="small text-muted mb-0">Hipersensibilidade, forte senso de justiça e hiperfoco em temas de interesse pessoal.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="clinical-card h-100 p-4">
+              <div class="text-primary mb-3 fs-3" style="color: var(--brand-primary) !important;"><i class="bi bi-journal-check"></i></div>
+              <h3 class="h5 fw-bold mb-2">Suporte Escolar (AEE)</h3>
+              <p class="small text-muted mb-0">Orientação e plano de adaptação curricular garantido por lei para evitar o desinteresse e a evasão escolar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modalidades de Atendimento (Renderizadas Limpamente) -->
+      <section class="mb-5">
+        <div class="text-center mb-4">
+          <h2 class="h3 fw-bold" style="color: var(--brand-primary);">Modalidades de Atendimento</h2>
+          <p class="text-muted small">Escolha a opção ideal para a sua necessidade familiar ou escolar</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          
+          <div class="col-md-6 col-lg-5">
+            <div class="clinical-card h-100 p-4 d-flex flex-column">
+              <span class="badge bg-light text-primary border mb-3 w-auto align-self-start py-2 px-3 fw-bold">
+                Presencial e Online
+              </span>
+              <h3 class="h4 fw-bold text-dark mb-2">Avaliação Neuropsicopedagógica</h3>
+              <p class="text-muted small flex-grow-1 mb-3">Investigação técnica completa com testes e relatórios para identificação de Altas Habilidades / Superdotação e dupla excepcionalidade.</p>
+              <p class="small fw-semibold text-secondary mb-4"><i class="bi bi-people me-1"></i> Público: Crianças, Adolescentes e Adultos</p>
+              <button onclick="selecionarServico('1')" class="btn btn-outline-primary btn-accessible w-100 mt-auto">
+                Solicitar Avaliação
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <div class="clinical-card h-100 p-4 d-flex flex-column">
+              <span class="badge bg-light text-primary border mb-3 w-auto align-self-start py-2 px-3 fw-bold">
+                Online (Atendimento Todo o Brasil)
+              </span>
+              <h3 class="h4 fw-bold text-dark mb-2">Orientação Parental e Escolar</h3>
+              <p class="text-muted small flex-grow-1 mb-3">Consultoria direta para famílias e professores sobre adequação curricular, rotina de estudos e direcionamento pedagógico.</p>
+              <p class="small fw-semibold text-secondary mb-4"><i class="bi bi-people me-1"></i> Público: Pais, Mães e Educadores</p>
+              <button onclick="selecionarServico('2')" class="btn btn-outline-primary btn-accessible w-100 mt-auto">
+                Solicitar Orientação
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Chamada para Ação Final -->
+      <div class="p-4 p-md-5 rounded-4 text-center text-white" style="background: linear-gradient(135deg, var(--brand-secondary), var(--brand-primary));">
+        <h3 class="h4 fw-bold mb-2">Pronto para agendar o acolhimento?</h3>
+        <p class="mb-4 opacity-90 mx-auto" style="max-width: 600px;">
+          Preencha nosso formulário simples de triagem. Suas respostas direcionam nossa mensagem inicial diretamente para o WhatsApp oficial da especialista.
+        </p>
+        <button onclick="mostrarTela2()" class="btn btn-brand-accent btn-accessible px-5 shadow">
+          Iniciar Formulário de Triagem
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-4 text-center text-muted small">
+      <div class="container">
+        <p class="mb-1 fw-semibold" style="color: var(--brand-primary);">Socorro Santos — Atendimento Especializado em Altas Habilidades / Superdotação</p>
+        <p class="mb-0">Projeto de Software — Alinhado ao ODS 4 (Educação de Qualidade)</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ================= TELA 2: FORMULÁRIO DE TRIAGEM ================= -->
+  <div id="tela2" class="app-screen py-5" style="display: none;">
+    <div class="container" style="max-width: 640px;">
+      
+      <div class="clinical-card p-4 p-md-5 shadow-sm">
+        
+        <div class="d-flex align-items-center gap-3 mb-4 border-bottom pb-3">
+          <button onclick="mostrarTela1()" class="btn btn-sm btn-outline-secondary rounded-circle" style="width: 38px; height: 38px; padding: 0;" aria-label="Voltar para a página inicial">
+            <i class="bi bi-arrow-left fs-5"></i>
+          </button>
+          <div>
+            <h2 class="h4 fw-bold mb-0" style="color: var(--brand-primary);">Formulário de Triagem</h2>
+            <small class="text-muted">Preencha os dados para iniciarmos o atendimento</small>
+          </div>
+        </div>
+
+        <div id="alerta-erro" class="alert alert-danger small d-none" role="alert"></div>
+
+        <form id="form-triagem" onsubmit="enviarTriagem(event)">
+          <!-- Responsável -->
+          <div class="mb-3">
+            <label for="nome_responsavel" class="form-label label-accessible">Nome do Responsável *</label>
+            <input type="text" class="form-control form-control-lg fs-6" id="nome_responsavel" name="nome_responsavel" value="Maria Oliveira" required>
+          </div>
+
+          <!-- E-mail -->
+          <div class="mb-3">
+            <label for="email" class="form-label label-accessible">E-mail de Contato *</label>
+            <input type="email" class="form-control form-control-lg fs-6" id="email" name="email" value="maria.oliveira@emailficticio.com" required>
+          </div>
+
+          <!-- Telefone -->
+          <div class="mb-3">
+            <label for="telefone" class="form-label label-accessible">Telefone / WhatsApp *</label>
+            <input type="tel" class="form-control form-control-lg fs-6" id="telefone" name="telefone" value="(61) 99999-8888" required>
+          </div>
+
+          <!-- Perfil -->
+          <div class="mb-3">
+            <label for="perfil_paciente" class="form-label label-accessible">Perfil do Paciente *</label>
+            <select class="form-select form-select-lg fs-6" id="perfil_paciente" name="perfil_paciente" required>
+              <option value="Criança" selected>Criança</option>
+              <option value="Adolescente">Adolescente</option>
+              <option value="Adulto">Adulto</option>
+            </select>
+          </div>
+
+          <!-- Serviço -->
+          <div class="mb-3">
+            <label for="servico_interesse_id" class="form-label label-accessible">Serviço de Interesse *</label>
+            <select class="form-select form-select-lg fs-6" id="servico_interesse_id" name="servico_interesse_id" required>
+              <option value="1" selected>Avaliação Neuropsicopedagógica</option>
+              <option value="2">Orientação Parental e Escolar</option>
+            </select>
+          </div>
+
+          <!-- Observação -->
+          <div class="mb-4">
+            <label for="mensagem_inicial" class="form-label label-accessible">Mensagem / Observação (Opcional)</label>
+            <textarea class="form-control fs-6" id="mensagem_inicial" name="mensagem_inicial" rows="3" placeholder="Descreva brevemente a situação..."></textarea>
+          </div>
+
+          <!-- Botão Submit -->
+          <button type="submit" id="btn-submit" class="btn btn-brand-accent btn-accessible w-100 shadow-sm">
+            <i class="bi bi-whatsapp me-2 fs-5"></i> Enviar e Abrir WhatsApp
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= TELA 3: CONFIRMAÇÃO E RESULTADO ================= -->
+  <div id="tela3" class="app-screen py-5" style="display: none;">
+    <div class="container" style="max-width: 580px;">
+      
+      <div class="clinical-card p-4 p-md-5 text-center shadow-sm">
+        <div class="mb-4">
+          <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: #D1FAE5; color: #059669;">
+            <i class="bi bi-check-circle-fill display-4"></i>
+          </div>
+          <h2 class="h3 fw-bold text-success mb-2">Triagem Gravada com Sucesso!</h2>
+          <p class="text-muted small mb-0">Seus dados foram validados e registrados com segurança no sistema.</p>
+        </div>
+
+        <div class="bg-light p-3 rounded-3 text-start mb-4 border">
+          <span class="badge bg-primary mb-2" style="background-color: var(--brand-primary) !important;">Resumo da Solicitação</span>
+          <p class="small mb-1"><strong>Responsável:</strong> <span id="resumo-nome">Maria Oliveira</span></p>
+          <p class="small mb-1"><strong>Serviço:</strong> <span id="resumo-servico">Avaliação Neuropsicopedagógica</span></p>
+          <p class="small mb-0"><strong>Status:</strong> <span class="text-success fw-bold"><i class="bi bi-shield-check me-1"></i>Pronto para Envio</span></p>
+        </div>
+
+        <a id="btn-link-whatsapp" href="https://api.whatsapp.com/send?phone=5561999998888&text=Ol%C3%A1%20Socorro%20Santos!%20Me%20chamo%20Maria%20Oliveira..." target="_blank" class="btn btn-brand-accent btn-accessible w-100 mb-3 shadow">
+          <i class="bi bi-whatsapp me-2 fs-5"></i> Iniciar Conversa no WhatsApp
+        </a>
+
+        <button onclick="mostrarTela1()" class="btn btn-link text-secondary text-decoration-none small">
+          <i class="bi bi-arrow-left me-1"></i> Voltar à Página Inicial
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript para Troca de Telas e Submissão -->
+  <script>
+    function mostrarTela1() {
+      document.getElementById('tela1').style.display = 'block';
+      document.getElementById('tela2').style.display = 'none';
+      document.getElementById('tela3').style.display = 'none';
+      window.scrollTo(0, 0);
+    }
+
+    function mostrarTela2() {
+      document.getElementById('tela1').style.display = 'none';
+      document.getElementById('tela2').style.display = 'block';
+      document.getElementById('tela3').style.display = 'none';
+      window.scrollTo(0, 0);
+    }
+
+    function selecionarServico(servicoId) {
+      const selectServico = document.getElementById('servico_interesse_id');
+      if (selectServico) {
+        selectServico.value = servicoId;
+      }
+      mostrarTela2();
+    }
+
+    async function enviarTriagem(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('form-triagem');
+      const formData = new FormData(form);
+      const alertaErro = document.getElementById('alerta-erro');
+      const btnSubmit = document.getElementById('btn-submit');
+
+      alertaErro.classList.add('d-none');
+      btnSubmit.disabled = true;
+      btnSubmit.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Processando...';
+
+      try {
+        const response = await fetch('/api/triagem', {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.sucesso) {
+          document.getElementById('resumo-nome').textContent = result.nome_responsavel;
+          document.getElementById('resumo-servico').textContent = result.servico_nome;
+          document.getElementById('btn-link-whatsapp').href = result.link_whatsapp;
+
+          document.getElementById('tela1').style.display = 'none';
+          document.getElementById('tela2').style.display = 'none';
+          document.getElementById('tela3').style.display = 'block';
+          window.scrollTo(0, 0);
+        } else {
+          alertaErro.textContent = result.erro || 'Ocorreu um erro ao enviar os dados.';
+          alertaErro.classList.remove('d-none');
+        }
+      } catch (error) {
+        // Modo de demonstração (se o Flask não estiver a rodar no momento)
+        const nome = document.getElementById('nome_responsavel').value;
+        const selectServico = document.getElementById('servico_interesse_id');
+        const servicoTexto = selectServico.options[selectServico.selectedIndex].text;
+
+        document.getElementById('resumo-nome').textContent = nome;
+        document.getElementById('resumo-servico').textContent = servicoTexto;
+
+        document.getElementById('tela1').style.display = 'none';
+        document.getElementById('tela2').style.display = 'none';
+        document.getElementById('tela3').style.display = 'block';
+        window.scrollTo(0, 0);
+      } finally {
+        btnSubmit.disabled = false;
+        btnSubmit.innerHTML = '<i class="bi bi-whatsapp me-2 fs-5"></i> Enviar e Abrir WhatsApp';
+      }
+    }
+  </script>
+</body>
+</html>
