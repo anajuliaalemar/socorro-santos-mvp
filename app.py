@@ -102,7 +102,7 @@ def registrar_triagem():
         if mensagem:
             texto_whatsapp += f"• *Observação:* {mensagem}\n"
 
-        # Número fictício/oficial para direcionamento
+        # Número fictício para direcionamento
         numero_whatsapp = "5561999998888" 
         link_whatsapp = f"https://api.whatsapp.com/send?phone={numero_whatsapp}&text={re.sub(' ', '%20', texto_whatsapp)}"
 
